@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 23
+/svn/!svn/ver/232/trunk
+END
+rails-bytecompile.el
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/232/trunk/rails-bytecompile.el
+END
+rails-features.el
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/232/trunk/rails-features.el
+END
+rails-speedbar-feature.el
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/232/trunk/rails-speedbar-feature.el
+END
+rails-test.el
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/232/trunk/rails-test.el
+END
+rails-log.el
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/232/trunk/rails-log.el
+END
+rails-rake.el
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/232/trunk/rails-rake.el
+END
+rails-compat.el
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/232/trunk/rails-compat.el
+END
+rails-controller-minor-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/232/trunk/rails-controller-minor-mode.el
+END
+rails-core.el
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/232/trunk/rails-core.el
+END
+History
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/232/trunk/History
+END
+rails-migration-minor-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/232/trunk/rails-migration-minor-mode.el
+END
+rails-snippets-feature.el
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/232/trunk/rails-snippets-feature.el
+END
+rails-controller-layout.el
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/232/trunk/rails-controller-layout.el
+END
+rails-navigation.el
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/232/trunk/rails-navigation.el
+END
+rails-unit-test-minor-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/232/trunk/rails-unit-test-minor-mode.el
+END
+rails-plugin-minor-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/232/trunk/rails-plugin-minor-mode.el
+END
+rails-model-minor-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/232/trunk/rails-model-minor-mode.el
+END
+rails-rspec-feature.el
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/232/trunk/rails-rspec-feature.el
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/232/trunk/Makefile
+END
+rails-lib.el
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/232/trunk/rails-lib.el
+END
+rails-project.el
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/232/trunk/rails-project.el
+END
+rails-model-layout.el
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/232/trunk/rails-model-layout.el
+END
+rails-ui.el
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/232/trunk/rails-ui.el
+END
+predictive-prog-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/232/trunk/predictive-prog-mode.el
+END
+rails-mailer-minor-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/232/trunk/rails-mailer-minor-mode.el
+END
+rails-view-minor-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/232/trunk/rails-view-minor-mode.el
+END
+rails-find.el
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/232/trunk/rails-find.el
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/232/trunk/ChangeLog
+END
+rails-layout-minor-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/232/trunk/rails-layout-minor-mode.el
+END
+rails-ruby.el
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/232/trunk/rails-ruby.el
+END
+rails-cmd-proxy.el
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/232/trunk/rails-cmd-proxy.el
+END
+rails-helper-minor-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/232/trunk/rails-helper-minor-mode.el
+END
+rails-functional-test-minor-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/232/trunk/rails-functional-test-minor-mode.el
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/232/trunk/README
+END
+rails-scripts.el
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/232/trunk/rails-scripts.el
+END
+rails-ws.el
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/232/trunk/rails-ws.el
+END
+rails-fixture-minor-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/232/trunk/rails-fixture-minor-mode.el
+END
+rails-spec.el
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/232/trunk/rails-spec.el
+END
+rails.el
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/232/trunk/rails.el
+END
+inflections.el
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/232/trunk/inflections.el
+END

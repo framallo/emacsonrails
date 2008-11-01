@@ -1,0 +1,6 @@
+Elite for EMACS v0.1
+
+Add elite-for-emacs-0.1 directory to you load path and add
+(require 'elite-for-emacs) to your .emacs.
+
+Thanks to David Braben and Ian Bell for obvious reasons.

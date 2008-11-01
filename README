@@ -1,0 +1,6 @@
+how to install:
+
+git clone git clone git@emacsonrails.org:emacsonrails.git
+
+ln -s ~/.emacs.d/.emacs ~/.emacs
+
