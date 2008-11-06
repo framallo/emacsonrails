@@ -1,0 +1,22 @@
+;; Object emacsonrails/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emacsonrails/"
+  :tables (list 
+   (semanticdb-table "emacsonrails-loader.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("setq" code nil nil [70 129]) ("setq" code nil nil [130 195]) ("rails" include nil nil [196 212]) ("find-recursive" include nil nil [213 238]) ("load-file" code nil nil [282 341]) ("semantic-load-enable-code-helpers" code nil nil [671 706]) ("add-to-list" code nil nil [1231 1285]) ("ecb" include nil nil [1286 1300]))
+    :file "emacsonrails-loader.el"
+    :pointmax 1302
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table ".emacs"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("setq" code nil nil [1 48]) ("setq" code nil nil [49 100]) ("setq" code nil nil [103 155]) ("rails" include nil nil [156 172]) ("setq" code nil nil [174 233]) ("color-theme" include nil nil [234 256]) ("setq" code nil nil [258 312]) ("icicles" include nil nil [313 331]) ("lacarte" include nil nil [332 350]) ("setq" code nil nil [387 417]) ("setq" code nil nil [475 509]))
+    :file ".emacs"
+    :pointmax 589
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )

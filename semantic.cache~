@@ -1,0 +1,15 @@
+;; Object emacsonrails/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emacsonrails/"
+  :tables (list 
+   (semanticdb-table "emacsonrails-loader.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("setq" code nil nil [70 129]) ("setq" code nil nil [130 194]) ("setq" code nil nil [195 260]) ("rails" include nil nil [261 277]) ("load-file" code nil nil [319 378]) ("semantic-load-enable-code-helpers" code nil nil [708 743]) ("add-to-list" code nil nil [1268 1322]) ("ecb" include nil nil [1323 1337]))
+    :file "emacsonrails-loader.el"
+    :pointmax 1339
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )
