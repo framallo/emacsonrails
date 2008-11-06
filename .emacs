@@ -1,4 +1,6 @@
 (setq load-path (cons "~/.emacs.d/" load-path))
+(require 'pastie)
+
 (setq load-path (cons "~/.emacs.d/misc" load-path))
 
 
