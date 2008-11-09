@@ -55,3 +55,14 @@
 (setq load-path (cons "~/.emacs.d/emacsonrails/color-theme" load-path))
 (require 'color-theme)
 
+
+
+;; SCM 
+
+;; GIT
+ (setq load-path (cons (expand-file-name "~/.emacs.d/emacsonrails/") load-path))
+ (require 'vc-git)
+ (when (featurep 'vc-git) (add-to-list 'vc-handled-backends 'git))
+ (require 'git)
+ (autoload 'git-blame-mode "git-blame"
+           "Minor mode for incremental blame for Git." t)
