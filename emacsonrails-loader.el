@@ -1,10 +1,13 @@
 ;TODO - Makefile to generate the path here the user wants (INSTALL)
 
 (setq load-path (cons "~/.emacs.d/emacsonrails" load-path))
+
 (setq load-path (cons "~/.emacs.d/emacsonrails/ruby" load-path))
+(require 'inf-ruby)
+(require 'ruby-electric)
+
 (setq load-path (cons "~/.emacs.d/emacsonrails/rails" load-path))
 (require 'rails)
-(require 'find-recursive) 
 
 
 ;CEDET, required for ECB
@@ -36,4 +39,19 @@
 
 (add-to-list 'load-path "~/.emacs.d/emacsonrails/ecb")
 (require 'ecb)
+
+;; This loads icicle mode. A helper to learn emacs using fuzzy commands search
+;; since it's heavy to load. You should enable  it with: M-x icy-mode
+(add-to-list 'load-path "~/.emacs.d/emacsonrails/icicles")
+(require 'icicles)
+;; menus helper. useless in text mode.
+;(require 'lacarte)
+
+
+;; OPTIONALS:
+(require 'find-recursive) 
+(require 'pastie)
+
+(setq load-path (cons "~/.emacs.d/emacsonrails/color-theme" load-path))
+(require 'color-theme)
 

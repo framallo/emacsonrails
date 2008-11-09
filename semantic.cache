@@ -4,9 +4,9 @@
   :tables (list 
    (semanticdb-table "emacsonrails-loader.el"
     :major-mode 'emacs-lisp-mode
-    :tags '(("setq" code nil nil [70 129]) ("setq" code nil nil [130 195]) ("rails" include nil nil [196 212]) ("find-recursive" include nil nil [213 238]) ("load-file" code nil nil [282 341]) ("semantic-load-enable-code-helpers" code nil nil [671 706]) ("add-to-list" code nil nil [1231 1285]) ("ecb" include nil nil [1286 1300]))
+    :tags '(("setq" code nil nil [70 129]) ("setq" code nil nil [131 195]) ("inf-ruby" include nil nil [196 215]) ("ruby-electric" include nil nil [216 240]) ("setq" code nil nil [242 307]) ("rails" include nil nil [308 324]) ("load-file" code nil nil [367 426]) ("semantic-load-enable-code-helpers" code nil nil [756 791]) ("add-to-list" code nil nil [1316 1370]) ("ecb" include nil nil [1371 1385]) ("add-to-list" code nil nil [1536 1594]) ("icicles" include nil nil [1595 1613]) ("find-recursive" include nil nil [1689 1714]) ("pastie" include nil nil [1716 1733]) ("setq" code nil nil [1735 1806]) ("color-theme" include nil nil [1807 1829]))
     :file "emacsonrails-loader.el"
-    :pointmax 1302
+    :pointmax 1831
     :unmatched-syntax 'nil
     )
    (semanticdb-table ".emacs"
@@ -15,7 +15,14 @@
     :file ".emacs"
     :pointmax 589
     )
-   )
+   (semanticdb-table "snippet.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("cl" include nil nil [10050 10063]) ("defgroup" code nil nil [10065 10218]) ("snippet-bound-face" variable (:user-visible-flag t :default-value (quote bold)) nil [10220 10332]) ("snippet-field-face" variable (:user-visible-flag t :default-value (quote highlight)) nil [10334 10454]) ("snippet-field-identifier" variable (:user-visible-flag t :default-value "$$") nil [10456 10580]) ("snippet-exit-identifier" variable (:user-visible-flag t :default-value "$.") nil [10582 10716]) ("snippet-field-default-beg-char" variable (:user-visible-flag t :default-value 123) nil [10718 10870]) ("snippet-field-default-end-char" variable (:user-visible-flag t :default-value 125) nil [10872 11023]) ("snippet-indent" variable (:user-visible-flag t :default-value "$>") nil [11025 11153]) ("snippet-line-terminator" variable (:user-visible-flag t :default-value "
+") nil [11155 11297]) ("snippet-map" variable (:default-value (make-sparse-keymap)) nil [11299 11401]) ("define-key" code nil nil [11427 11495]) ("define-key" code nil nil [11496 11564]) ("define-key" code nil nil [11565 11633]) ("snippet" type (:members ("bound" "fields" "exit-marker") :type "struct") nil [11635 12320]) ("snippet" variable nil nil [12322 12455]) ("make-variable-buffer-local" code nil nil [12457 12494]) ("snippet-make-bound-overlay" function nil nil [12496 13040]) ("snippet-make-field-overlay" function (:arguments ("&optional" "name")) nil [13042 13928]) ("snippet-fields-with-name" function (:arguments ("name")) nil [13930 14154]) ("snippet-bound-modified" function (:arguments ("bound" "after" "beg" "end" "&optional" "change")) nil [14156 14604]) ("snippet-field-insert" function (:arguments ("field" "after" "beg" "end" "&optional" "change")) nil [14606 15071]) ("snippet-field-modified" function (:arguments ("field" "after" "beg" "end" "&optional" "change")) nil [15073 15698]) ("snippet-field-update" function (:arguments ("field" "after" "beg" "end" "&optional" "change")) nil [15700 16477]) ("snippet-exit-snippet" function nil nil [16479 16785]) ("snippet-next-field" function (:user-visible-flag t) nil [16787 17478]) ("snippet-prev-field" function (:user-visible-flag t) nil [17480 18195]) ("snippet-cleanup" function nil nil [18197 18538]) ("snippet-field-regexp" function nil nil [18540 18993]) ("snippet-split-string" function (:arguments ("string" "&optional" "separators" "include-separators-p")) nil [18995 19708]) ("snippet-split-regexp" function nil nil [19710 19911]) ("snippet-insert" function (:user-visible-flag t :arguments ("template")) nil [19913 24120]) ("snippet-strip-abbrev-table-suffix" function (:arguments ("str")) nil [24122 24317]) ("snippet-make-abbrev-expansion-hook" function (:arguments ("abbrev-table" "abbrev-name" "template")) nil [24319 25319]) ("snippet-abbrev" function (:arguments ("abbrev-table" "abbrev-name" "template")) nil [25321 26190]) ("snippet-with-abbrev-table" function (:arguments ("abbrev-table" "&rest" "snippet-alist")) nil [26192 26844]) ("snippet" package nil nil [26846 26864]))
+    :file "snippet.el"
+    :pointmax 26865
+    )
+    )
   :file "semantic.cache"
   :semantic-tag-version "2.0pre4"
   :semanticdb-version "2.0pre4"

@@ -1,0 +1,76 @@
+#! /bin/sh -e
+# /usr/lib/emacsen-common/packages/install/color-theme-el
+
+# Written by Jim Van Zandt <jrv@vanzandt.mv.com>, borrowing heavily
+# from the install scripts for gettext by Santiago Vila
+# <sanvila@ctv.es> and octave by Dirk Eddelbuettel <edd@debian.org>.
+
+FLAVOR=$1
+PACKAGE=color-theme-el
+
+if [ ${FLAVOR} = emacs ]; then exit 0; fi
+
+echo install/${PACKAGE}: Handling install for emacsen flavor ${FLAVOR}
+
+#FLAVORTEST=`echo $FLAVOR | cut -c-6`
+#if [ ${FLAVORTEST} = xemacs ] ; then
+#    SITEFLAG="-no-site-file"
+#else
+#    SITEFLAG="--no-site-file"
+#fi
+
+ELDIR=/usr/share/emacs/site-lisp/${PACKAGE}
+ELCDIR=/usr/share/${FLAVOR}/site-lisp/${PACKAGE}
+FLAGS="${SITEFLAG} -q -batch -l /tmp/path.el -f batch-byte-compile"
+
+# Install-info-altdir does not actually exist. 
+# Maybe somebody will write it.
+if test -x /usr/sbin/install-info-altdir; then
+    echo install/${PACKAGE}: install Info links for ${FLAVOR}
+    install-info-altdir --quiet --section "" "" --dirname=${FLAVOR} /usr/info/${PACKAGE}.info.gz
+fi
+
+install -m 755 -d ${ELCDIR}
+install -m 755 -d ${ELCDIR}/themes
+
+# First: process color-theme main files
+cd ${ELDIR}
+FILES=`echo *.el`
+cp ${FILES} ${ELCDIR}
+cp -a ${ELDIR}/themes ${ELCDIR}/
+
+cd ${ELCDIR}
+
+cat << EOF > /tmp/path.el
+(setq load-path (cons "${ELCDIR}" load-path) byte-compile-warnings nil)
+EOF
+${FLAVOR} ${FLAGS} ${FILES}
+rm *.el
+
+## symlink the source files into the ${ELCDIR}
+## so that `find-library' will find them
+for FILE in $FILES ; do
+  echo "Linking $FILE ..."
+  if ! [ -e $FILE ];  then
+  ## note that these will not be 'relative' symlinks.
+    ln -s ${ELDIR}/$FILE .
+  fi
+done
+
+# Then: process color-theme theme files
+cd ${ELDIR}/themes
+FILES=`echo *.el`
+cd ${ELCDIR}/themes
+
+${FLAVOR} ${FLAGS} ${FILES}
+rm -f *.el /tmp/path.el
+
+for FILE in $FILES ; do
+  echo "Linking $FILE ..."
+  if ! [ -e $FILE ];  then
+  ## note that these will not be 'relative' symlinks.
+    ln -s ${ELDIR}/themes/$FILE .
+  fi
+done
+
+exit 0
