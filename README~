@@ -1,6 +1,0 @@
-how to install:
-
-git clone repo
-
-ln -s ~/.emacs.d/.emacs ~/.emacs
-
