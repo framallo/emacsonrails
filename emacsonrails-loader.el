@@ -66,3 +66,9 @@
  (require 'git)
  (autoload 'git-blame-mode "git-blame"
            "Minor mode for incremental blame for Git." t)
+
+;; Sintax Highlight
+
+(if (fboundp 'global-font-lock-mode)
+    (global-font-lock-mode 1)        ; GNU Emacs
+  (setq font-lock-auto-fontify t))   ; XEmacs
