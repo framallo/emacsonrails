@@ -2,5 +2,38 @@ how to install:
 
 git clone git clone git@emacsonrails.org:emacsonrails.git
 
+.emacs file
+===========
+check .emacs.sample
+or 
 ln -s ~/.emacs.d/.emacs ~/.emacs
 
+
+
+Remote Pair Programming
+=======================
+We recommend:
+Add to ~/.ssh/config
+
+# Where to find the control path, if we have one
+Host *
+   ControlPath ~/.ssh/master-%r@%h:%p
+   ForwardAgent yes
+   Compression yes
+   ForwardX11 yes
+
+Also, You can replace * with your hostname
+
+
+How to run emacs multi tty
+check: http://www.emacswiki.org/emacs/MultiTTYSupport
+1. run emacs on server mode:
+    M-x server-start
+2. create a window on screen: 
+    C-a c
+3. Run emacsclient
+    emacsclient -c
+    -t, --tty               Open a new Emacs frame on the current terminal
+    -c, --create-frame      Create a new frame instead of trying to
+                        use the current Emacs frame
+         

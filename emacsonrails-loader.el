@@ -60,7 +60,7 @@
 ;; SCM 
 
 ;; GIT
- (setq load-path (cons (expand-file-name "~/.emacs.d/emacsonrails/") load-path))
+ (setq load-path (cons (expand-file-name "~/.emacs.d/emacsonrails/git") load-path))
  (require 'vc-git)
  (when (featurep 'vc-git) (add-to-list 'vc-handled-backends 'git))
  (require 'git)
