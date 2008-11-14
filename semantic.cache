@@ -1,0 +1,15 @@
+;; Object emacsonrails/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emacsonrails/"
+  :tables (list 
+   (semanticdb-table "emacsonrails-loader.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("setq" code nil nil [70 129]) ("setq" code nil nil [131 195]) ("inf-ruby" include nil nil [196 215]) ("ruby-electric" include nil nil [216 240]) ("setq" code nil nil [242 307]) ("rails" include nil nil [308 324]) ("load-file" code nil nil [367 426]) ("semantic-load-enable-code-helpers" code nil nil [756 791]) ("add-to-list" code nil nil [1316 1370]) ("ecb" include nil nil [1371 1385]) ("add-to-list" code nil nil [1536 1594]) ("icicles" include nil nil [1595 1613]) ("find-recursive" include nil nil [1689 1714]) ("pastie" include nil nil [1716 1733]) ("setq" code nil nil [1735 1806]) ("color-theme" include nil nil [1807 1829]) ("setq" code nil nil [1850 1932]) ("vc-git" include nil nil [1934 1951]) ("when" code nil nil [1953 2018]) ("git" include nil nil [2020 2034]) ("git-blame-mode" function (:prototype-flag t :user-visible-flag t) nil [2036 2131]) ("if" code nil nil [2154 2274]))
+    :file "emacsonrails-loader.el"
+    :pointmax 2286
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )
