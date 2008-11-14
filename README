@@ -1,7 +1,8 @@
 how to install:
+sudo apt-get install emacs-snapshot emacs-extra 
+git clone git://www.indux.com.ar/emacsonrails.git
 
 git clone git clone git@emacsonrails.org:emacsonrails.git
-
 .emacs file
 ===========
 check .emacs.sample
