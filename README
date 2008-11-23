@@ -1,6 +1,8 @@
 how to install:
 
 git clone git clone git@emacsonrails.org:emacsonrails.git
+git submodule init
+git submodule update
 
 .emacs file
 ===========
