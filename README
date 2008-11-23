@@ -12,6 +12,8 @@ git clone git://www.indux.com.ar/emacsonrails.git
 
 Contributors:
 git clone git clone git@emacsonrails.org:emacsonrails.git
+git submodule init
+git submodule update
 
 
 .emacs file
