@@ -1,12 +1,34 @@
 how to install:
+
 sudo apt-get install emacs-snapshot emacs-extra 
+
+for the options of emacs-extra I added calculator, Templates and enhanced font lock support
+
+mkdir ~/.emacs.d
+cd ~/.emacs.d/
+
+Users:
 git clone git://www.indux.com.ar/emacsonrails.git
 
+Contributors:
 git clone git clone git@emacsonrails.org:emacsonrails.git
+
+
 .emacs file
 ===========
-check .emacs.sample
-or 
+Add to your ~/.emacs file:
+
+; loads emacs on rails
+(load "~/.emacs.d/emacsonrails/emacsonrails-loader.el" 'noerror)
+
+or
+
+cp ~/.emacs.d/emacsonrails/emacs.sample ~/.emacs
+
+Also check  emacs.sample2
+
+
+This is nos used:
 ln -s ~/.emacs.d/.emacs ~/.emacs
 
 

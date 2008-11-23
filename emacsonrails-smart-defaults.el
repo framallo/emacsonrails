@@ -25,7 +25,10 @@
 ; run color-theme friendly with rails mode
 ; the only issue is to make the errors more legible with black background 
 (color-theme-initialize )
-(color-theme-goldenrod )
+(color-theme-euphoria )
+;; another candidate but doesn't work well on tty
+;;(color-theme-goldenrod )
+
 
 ;improves on buffer switch
 ; C-s next 
@@ -40,6 +43,6 @@
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 
 ; add transpose functions
-(require transpose.el)
+(load-file  "transpose.el")
 
 (server-start)
