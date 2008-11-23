@@ -33,10 +33,13 @@
 (iswitchb-mode)
 
 ; create buffers like file & file|folder
-    (require 'uniquify)
-    (setq uniquify-buffer-name-style 'reverse)
-    (setq uniquify-separator "/")
-    (setq uniquify-after-kill-buffer-p t) ; rename after killing uniquified
-    (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'reverse)
+(setq uniquify-separator "/")
+(setq uniquify-after-kill-buffer-p t) ; rename after killing uniquified
+(setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
+
+; add transpose functions
+(require transpose.el)
 
 (server-start)
