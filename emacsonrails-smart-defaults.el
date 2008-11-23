@@ -43,6 +43,6 @@
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 
 ; add transpose functions
-(load-file  "transpose.el")
+(load-file  (expand-file-name "transpose.el"))
 
 (server-start)
