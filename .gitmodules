@@ -1,3 +1,0 @@
-[submodule "rails"]
-	path = rails
-	url = git://github.com/relevance/emacs-rails.git
