@@ -14,10 +14,13 @@ Contributors:
 git clone git clone git@emacsonrails.org:emacsonrails.git
 git submodule init
 git submodule update
+<<<<<<< HEAD:README
 
 Both:
 git submodule init
 git submodule update
+=======
+>>>>>>> cb336414be61018adabd6761264c4c232efa29fd:README
 
 .emacs file
 ===========
