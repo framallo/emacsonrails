@@ -1,3 +1,6 @@
 [submodule "rails"]
 	path = rails
 	url = git://github.com/relevance/emacs-rails.git
+[submodule "org-mode"]
+	path = org-mode
+	url = git://repo.or.cz/org-mode.git
