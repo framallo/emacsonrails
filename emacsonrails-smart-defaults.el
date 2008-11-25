@@ -43,7 +43,7 @@
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 
 ; add transpose functions
-(load-file  (expand-file-name "transpose.el"))
+(load-file "~/.emacs.d/emacsonrails/transpose.el")
 
 ;; The following lines are always needed.  Choose your own keys.
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
