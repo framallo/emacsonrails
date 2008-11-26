@@ -43,7 +43,7 @@
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 
 ; add transpose functions
-(load-file  (expand-file-name "transpose.el"))
+(load-file "~/.emacs.d/emacsonrails/transpose.el")
 
 ;; The following lines are always needed.  Choose your own keys.
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
@@ -51,5 +51,7 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 
-
+;(setq server-host "1420n")
+;set server-use-tcp to t
+;(setq server-use-tcp t)
 (server-start)
