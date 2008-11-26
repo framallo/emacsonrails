@@ -51,5 +51,7 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 
-
+;(setq server-host "1420n")
+;set server-use-tcp to t
+;(setq server-use-tcp t)
 (server-start)

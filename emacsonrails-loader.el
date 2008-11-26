@@ -58,8 +58,6 @@
 (setq load-path (cons "~/.emacs.d/emacsonrails/org-mode/lisp" load-path))
 (setq load-path (cons "~/.emacs.d/emacsonrails/org-mode/contrib/lisp" load-path))
 (require 'org-install)
-
-
 ;; SCM 
 
 ;; GIT
