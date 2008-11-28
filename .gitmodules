@@ -4,3 +4,6 @@
 [submodule "org-mode"]
 	path = org-mode
 	url = git://repo.or.cz/org-mode.git
+[submodule "rinari"]
+	path = rinari
+	url = git://github.com/eschulte/rinari.git
