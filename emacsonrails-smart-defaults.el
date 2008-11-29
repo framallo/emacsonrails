@@ -30,10 +30,10 @@
 ;;(color-theme-goldenrod )
 
 
-;improves on buffer switch
+;improves on buffer switch - replaced by ido
 ; C-s next 
 ; C-r previous
-(iswitchb-mode)
+;(iswitchb-mode)
 
 ; create buffers like file & file|folder
 (require 'uniquify)

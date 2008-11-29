@@ -7,3 +7,6 @@
 [submodule "rinari"]
 	path = rinari
 	url = git://github.com/eschulte/rinari.git
+[submodule "yasnippets-rails"]
+	path = yasnippets-rails
+	url = git://github.com/eschulte/yasnippets-rails.git
