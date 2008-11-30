@@ -62,6 +62,10 @@
 (require 'rinari)
 
 
+;; nxhtml
+(load 
+(concat (file-name-directory (or load-file-name buffer-file-name))
+	      "nxhtml/autostart.el"))
 
 ;; completition section
 ;; predictive install location
