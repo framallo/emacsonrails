@@ -29,6 +29,11 @@ cd ..
 
 cd org-mode
 make
+cd ..
+
+cd predictive
+make
+cd ..
 
 
 add to your .emacs file
