@@ -161,7 +161,8 @@
 
 
 ;; OPTIONALS:
-(require 'find-recursive) 
+; decreapted
+;(require 'find-recursive) 
 (require 'pastie)
 
 (setq load-path  
