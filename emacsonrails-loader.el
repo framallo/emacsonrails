@@ -60,6 +60,10 @@
 		    "rinari") 
 	    load-path))
 (require 'rinari)
+; add TAGS file to rinari
+(setq rinari-tags-file-name "TAGS")
+; to update TAGS you should run:
+; ctags-exuberant -a -e -f TAGS --tag-relative -R app lib vendor
 
 
 ;; nxhtml
@@ -106,9 +110,10 @@
      (mumamo-add-multi-keymap 'mumamo-multi-major-mode mumamo-map)))
 
 ;; load yas on ruby-mode
-(add-to-list 'yas/extra-mode-hooks
-             'ruby-mode-hook)
+;;(add-to-list 'yas/extra-mode-hooks
+;;             'ruby-mode-hook)
 
+(require 'tabkey2)
 
 ;CEDET, required for ECB
 
