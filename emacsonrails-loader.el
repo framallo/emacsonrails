@@ -3,6 +3,8 @@
 (setq load-path
       (cons (concat (file-name-directory (or load-file-name buffer-file-name)))
 	    load-path))
+
+;; Ruby related
 (setq load-path 
       (cons (concat (file-name-directory (or load-file-name buffer-file-name))
 		    "ruby") 
@@ -30,6 +32,25 @@
 	     (inf-ruby-keys)
 	     ))
 
+; ri-script
+(setq ri-ruby-script
+      (concat (file-name-directory (or load-file-name buffer-file-name))
+"ruby/ri-emacs.rb"))
+(autoload 'ri 
+  (concat (file-name-directory (or load-file-name buffer-file-name))
+	"ruby/ri-ruby.el")
+  nil t)
+;;
+;;  You may want to bind the ri command to a key.
+;;  For example to bind it to F1 in ruby-mode:
+;;  Method/class completion is also available.
+;;
+;;   (add-hook 'ruby-mode-hook (lambda ()
+;;                               (local-set-key 'f1 'ri)
+;;                               (local-set-key "\M-\C-i" 'ri-ruby-complete-symbol)
+;;                               (local-set-key 'f4 'ri-ruby-show-args)
+;;                               ))
+
 
 
 ;; Interactively Do Things (highly recommended, but not strictly required)
@@ -42,13 +63,38 @@
 		    "rinari") 
 	    load-path))
 (require 'rinari)
+; add TAGS file to rinari
+(setq rinari-tags-file-name "TAGS")
+; to update TAGS you should run:
+; ctags-exuberant -a -e -f TAGS --tag-relative -R app lib vendor
 
 
+;; nxhtml
+(load 
+(concat (file-name-directory (or load-file-name buffer-file-name))
+	      "nxhtml/autostart.el"))
+
+;; completition section
+;; predictive install location
+(add-to-list 'load-path 
+(concat (file-name-directory (or load-file-name buffer-file-name))
+	      "predictive"))
+;; dictionary locations
+(add-to-list 'load-path 
+(concat (file-name-directory (or load-file-name buffer-file-name))
+	      "predictive/latex"))
+(add-to-list 'load-path 
+(concat (file-name-directory (or load-file-name buffer-file-name))
+	      "predictive/html"))
+;; load predictive package
+(require 'predictive)
+
+;; yasnippet 
 (setq load-path  
       (cons (concat (file-name-directory (or load-file-name buffer-file-name))
 		    "yasnippet") 
 	    load-path))
-;;; from setup.el --- setup yasnippets for use with rails
+; from setup.el --- setup yasnippets for use with rails
 (require 'yasnippet)
 (yas/initialize)
 (yas/load-directory
@@ -66,9 +112,11 @@
             map))
      (mumamo-add-multi-keymap 'mumamo-multi-major-mode mumamo-map)))
 
-;; load on ruby-mode
-(add-to-list 'yas/extra-mode-hooks
-             'ruby-mode-hook)
+;; load yas on ruby-mode
+;;(add-to-list 'yas/extra-mode-hooks
+;;             'ruby-mode-hook)
+
+(require 'tabkey2)
 
 ;CEDET, required for ECB
 
@@ -76,6 +124,7 @@
 (load-file 
  (concat (file-name-directory (or load-file-name buffer-file-name))
 	 "cedet/common/cedet.el"))
+
 
 ;; Enabling various SEMANTIC minor modes.  See semantic/INSTALL for more ideas.
 ;; Select one of the following:
@@ -115,7 +164,8 @@
 
 
 ;; OPTIONALS:
-(require 'find-recursive) 
+; decreapted
+;(require 'find-recursive) 
 (require 'pastie)
 
 (setq load-path  
@@ -152,3 +202,6 @@
 (if (fboundp 'global-font-lock-mode)
     (global-font-lock-mode 1)        ; GNU Emacs
   (setq font-lock-auto-fontify t))   ; XEmacs
+
+
+

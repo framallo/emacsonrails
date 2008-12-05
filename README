@@ -8,6 +8,7 @@ for the options of emacs-extra I added calculator, Templates and enhanced font l
 mkdir ~/.emacs.d
 cd ~/.emacs.d/
 
+Download emacsonrails:
 Users:
 git clone git://www.indux.com.ar/emacsonrails.git
 
@@ -16,34 +17,32 @@ git clone git clone git@emacsonrails.org:emacsonrails.git
 git submodule init
 git submodule update
 
-Both:
+steps to install:
+
 git submodule init
 git submodule update
 
-install org-mode
-----------------
+cd rinari
+git submodule init
+git submodule update
+cd ..
+
 cd org-mode
 make
+cd ..
+
+cd predictive
+make
+cd ..
 
 
-.emacs file
+add to your .emacs file
 ===========
 Add to your ~/.emacs file:
 
 ; loads emacs on rails
 (load "~/.emacs.d/emacsonrails/emacsonrails-loader.el" 'noerror)
-
-or
-
-cp ~/.emacs.d/emacsonrails/emacs.sample ~/.emacs
-
-Also check  emacs.sample2
-
-
-This is nos used:
-ln -s ~/.emacs.d/.emacs ~/.emacs
-
-
+(load "~/.emacs.d/emacsonrails/emacsonrails-smart-defaults.el" 'noerror)
 
 Remote Pair Programming
 =======================
@@ -71,6 +70,3 @@ check: http://www.emacswiki.org/emacs/MultiTTYSupport
     -t, --tty               Open a new Emacs frame on the current terminal
     -c, --create-frame      Create a new frame instead of trying to
                         use the current Emacs frame
-         
-I am on rinari
-rinari
