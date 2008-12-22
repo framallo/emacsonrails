@@ -11,7 +11,10 @@
 	    load-path))
 (require 'inf-ruby)
 (require 'ruby-electric)
-(require 'ruby-mode)
+(add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode)))
+; to implement
+;(require 'pabbrev)
+;(add-hook 'ruby-mode-hook '(lambda () (pabbrev-mode)))
 
 (autoload 'ruby-mode "ruby-mode"
   "Mode for editing ruby source files" t)
