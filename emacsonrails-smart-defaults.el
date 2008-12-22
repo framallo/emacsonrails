@@ -25,7 +25,7 @@
 ; run color-theme friendly with rails mode
 ; the only issue is to make the errors more legible with black background 
 (color-theme-initialize )
-(color-theme-euphoria )
+;(color-theme-euphoria )
 ;; another candidate but doesn't work well on tty
 ;;(color-theme-goldenrod )
 
