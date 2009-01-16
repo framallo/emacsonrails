@@ -24,16 +24,10 @@
 
 ; run color-theme friendly with rails mode
 ; the only issue is to make the errors more legible with black background 
-(color-theme-initialize )
+;(color-theme-initialize)
 ;(color-theme-euphoria )
 ;; another candidate but doesn't work well on tty
 ;;(color-theme-goldenrod )
-
-
-;improves on buffer switch - replaced by ido
-; C-s next 
-; C-r previous
-;(iswitchb-mode)
 
 ; create buffers like file & file|folder
 (require 'uniquify)
