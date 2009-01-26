@@ -10,3 +10,6 @@
 [submodule "yasnippets-rails"]
 	path = yasnippets-rails
 	url = git://github.com/eschulte/yasnippets-rails.git
+[submodule "fuzzy-find-in-project"]
+	path = fuzzy-find-in-project
+	url = git://github.com/avvo/fuzzy-find-in-project.git

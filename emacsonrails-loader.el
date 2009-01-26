@@ -163,6 +163,13 @@
 ;(require 'lacarte)
 
 
+;; fuzzy find
+(add-to-list 'load-path 
+	     (concat (file-name-directory (or load-file-name buffer-file-name))
+		     "fuzzy-find-in-project"))
+(require 'fuzzy-find-in-project)
+(fuzzy-find-project-root "~/workplace")
+
 ;; OPTIONALS:
 ; decreapted
 ;(require 'find-recursive) 
