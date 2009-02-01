@@ -18,14 +18,13 @@
 
 ; reduce font size using: "7x14" 
 ; Font Menu: Shift-Mouse1
-;(set-frame-font "Inconsolata-9")
-;(modify-all-frames-parameters
-;'((font . "ttf-incosolata-9")))
-(set-default-font "-unknown-Inconsolata-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")
+(modify-all-frames-parameters
+'((font . "-unknown-Inconsolata-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")))
 (set-frame-font "-unknown-Inconsolata-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1" "keep-size")
 
 ; run color-theme friendly with rails mode
 ; the only issue is to make the errors more legible with black background 
+
 ;(color-theme-initialize)
 ;(color-theme-euphoria )
 ;; another candidate but doesn't work well on tty
