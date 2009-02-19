@@ -191,6 +191,15 @@
 	      load-path)) 
 (require 'org-install)
 
+(load-file "~/.emacs.d/emacsonrails/transpose.el")
+
+(load-file (concat (file-name-directory (or load-file-name buffer-file-name))
+	  "gpicker-1.0/gpicker.el") )
+(global-set-key [8388710] 'gpicker-find-file)
+(global-set-key [?\C-x ?4 8388710] 'gpicker-find-file-other-window)
+(global-set-key [?\C-x ?5 8388710] 'gpicker-find-file-other-frame)
+
+
 ;; SCM 
 
 ;; GIT
