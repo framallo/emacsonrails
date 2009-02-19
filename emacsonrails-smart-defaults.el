@@ -7,6 +7,9 @@
 ;disabes the emacs splash-screen
 (setq inhibit-splash-screen t)
 
+; quick switch bw windows
+(windmove-default-keybindings 'meta)
+
 ;enables clipboard interaction with the X window system
 (setq x-select-enable-clipboard t)
 

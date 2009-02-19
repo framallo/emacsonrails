@@ -164,13 +164,14 @@
 
 
 ;; fuzzy find
-(add-to-list 'load-path 
-	     (concat (file-name-directory (or load-file-name buffer-file-name))
-		     "fuzzy-find-in-project"))
-(require 'fuzzy-find-in-project)
-(fuzzy-find-project-root "~/workplace")
+;(add-to-list 'load-path 
+;	     (concat (file-name-directory (or load-file-name buffer-file-name))
+;		     "fuzzy-find-in-project"))
+;(require 'fuzzy-find-in-project)
+;(fuzzy-find-project-root "~/workplace")
 
 ;; OPTIONALS:
+
 ; decreapted
 ;(require 'find-recursive) 
 (require 'pastie)
@@ -189,6 +190,7 @@
 	      "org-mode/contrib/lisp")
 	      load-path)) 
 (require 'org-install)
+
 ;; SCM 
 
 ;; GIT
@@ -209,6 +211,11 @@
 (if (fboundp 'global-font-lock-mode)
     (global-font-lock-mode 1)        ; GNU Emacs
   (setq font-lock-auto-fontify t))   ; XEmacs
+
+
+
+
+
 
 
 

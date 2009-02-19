@@ -13,3 +13,9 @@
 [submodule "fuzzy-find-in-project"]
 	path = fuzzy-find-in-project
 	url = git://github.com/avvo/fuzzy-find-in-project.git
+[submodule "textmate.el"]
+	path = textmate.el
+	url = git://github.com/defunkt/textmate.el.git
+[submodule "gpicker"]
+	path = gpicker
+	url = git://git.savannah.nongnu.org/gpicker.git
