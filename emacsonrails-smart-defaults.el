@@ -10,7 +10,7 @@
 ; quick switch bw windows
 (windmove-default-keybindings 'meta)
 
-;enablesserv clipboard interaction with the X window system
+;enables clipboard interaction with the X window system
 (setq x-select-enable-clipboard t)
 
 ;hides the menu bar
