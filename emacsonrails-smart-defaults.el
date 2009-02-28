@@ -10,7 +10,7 @@
 ; quick switch bw windows
 (windmove-default-keybindings 'meta)
 
-;enables clipboard interaction with the X window system
+;enablesserv clipboard interaction with the X window system
 (setq x-select-enable-clipboard t)
 
 ;hides the menu bar
@@ -32,6 +32,7 @@
 ;(color-theme-euphoria )
 ;; another candidate but doesn't work well on tty
 ;;(color-theme-goldenrod )
+(color-theme-emacs-21)
 
 ; create buffers like file & file|folder
 (require 'uniquify)

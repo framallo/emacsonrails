@@ -74,6 +74,10 @@
 (concat (file-name-directory (or load-file-name buffer-file-name))
 	      "nxhtml/autostart.el"))
 
+;; added linum
+(add-hook 'eruby-nxhtml   'linum-mode)
+(add-hook 'ruby-mode-hook 'linum-mode)
+
 ;; completition section
 ;; predictive install location
 (add-to-list 'load-path 
