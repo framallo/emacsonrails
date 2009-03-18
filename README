@@ -90,3 +90,8 @@ add to /etc/apt/sources.list
 # emacs
 deb http://ppa.launchpad.net/ubuntu-elisp/ubuntu/ intrepid main
 deb-src http://ppa.launchpad.net/ubuntu-elisp/ubuntu/ intrepid main
+
+run:
+# add ubuntu-elisp keys
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com  D62FCE72
+
