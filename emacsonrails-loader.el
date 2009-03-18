@@ -185,6 +185,8 @@
 	      "color-theme")
       load-path))
 (require 'color-theme)
+
+
 (setq load-path 
       (cons (concat (file-name-directory (or load-file-name buffer-file-name))
 	      "org-mode/lisp")

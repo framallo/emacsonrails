@@ -1,20 +1,3 @@
-2007-09-10  Brian Palmer  <bpalmer@cs.nmsu.edu>
-
-	* color-theme.el (replace-in-string): Renamed to
-	color-theme-replace-in-string. This is either an alias to a
-	pre-existing replace-in-string, or an inline function call to
-	replace-regexp-in-string.
-
-2006-07-05  Brian Palmer  <bpalmer@gmail.com>
-
-	* color-theme.el (color-theme-libraries): Use
-	file-name-as-directory and expand-file-name rather than concat to
-	make file names platform-neutral. 
-
-2006-06-02  Xavier Maillard  <zedek@gnu.org>
-
-	* Updated Debian package to 6.6.0-4
-
 2006-05-28  Xavier Maillard  <zedek@gnu.org>
 
 	* Version 6.6.0 is released

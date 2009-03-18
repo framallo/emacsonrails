@@ -2,6 +2,7 @@ how to install:
 ===============
 
 sudo apt-get install emacs-snapshot emacs-extra 
+sudo apt-get install ttf-inconsolata 
 
 for the options of emacs-extra I added calculator, Templates and enhanced font lock support
 
@@ -35,6 +36,14 @@ cd predictive
 make
 cd ..
 
+cd gpicker-1.0
+sudo apt-get install libgtk2.0-dev libglade2-dev
+./configure
+make
+sudo make install
+cd ..
+
+sudo apt-get install ttf-inconsolata
 
 add to your .emacs file
 ===========
@@ -43,6 +52,9 @@ Add to your ~/.emacs file:
 ; loads emacs on rails
 (load "~/.emacs.d/emacsonrails/emacsonrails-loader.el" 'noerror)
 (load "~/.emacs.d/emacsonrails/emacsonrails-smart-defaults.el" 'noerror)
+
+Done!
+
 
 Remote Pair Programming
 =======================
@@ -70,3 +82,11 @@ check: http://www.emacswiki.org/emacs/MultiTTYSupport
     -t, --tty               Open a new Emacs frame on the current terminal
     -c, --create-frame      Create a new frame instead of trying to
                         use the current Emacs frame
+
+emacs-snapshot repo
+===================
+add to /etc/apt/sources.list
+
+# emacs
+deb http://ppa.launchpad.net/ubuntu-elisp/ubuntu/ intrepid main
+deb-src http://ppa.launchpad.net/ubuntu-elisp/ubuntu/ intrepid main

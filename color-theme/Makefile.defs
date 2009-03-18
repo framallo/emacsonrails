@@ -28,11 +28,12 @@ TARBALL    = $(DISTDIR).tar.gz
 ZIPFILE    = $(DISTDIR).zip
 
 MANUAL     = 
-LASTUPLOAD = 6.6.0-3
+LASTUPLOAD = 6.6.0-2
 BUILDOPTS  =
 
 # DO NOT TOUCH THIS
 TAG = $(shell echo RELEASE-$(VERSION) | tr '.' '-')
 CVSMODULE = $(shell cat CVS/Repository)
 CVSBRANCH = $(shell cvs status color-theme.el |grep "Sticky Tag:"|awk '{print $$3}'|sed 's/(none)/HEAD/')
+CVSBRANCH = $(shell echo rel-$(VERSION) | tr '.' '-')
 CVSROOT   = $(shell cat CVS/Root)

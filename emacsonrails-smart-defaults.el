@@ -19,10 +19,10 @@
 ;hides the toolbar
 (tool-bar-mode 0)
 
-; reduce font size using: "7x14" 
+; reduce font size using: "7xx14" 
 ; Font Menu: Shift-Mouse1
 (modify-all-frames-parameters
-'((font . "-unknown-Inconsolata-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")))
+ '((font . "-unknown-Inconsolata-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")))
 (set-frame-font "-unknown-Inconsolata-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1" "keep-size")
 
 ; run color-theme friendly with rails mode
@@ -32,7 +32,7 @@
 ;(color-theme-euphoria )
 ;; another candidate but doesn't work well on tty
 ;;(color-theme-goldenrod )
-(color-theme-emacs-21)
+;(color-theme-emacs-21)
 
 ; create buffers like file & file|folder
 (require 'uniquify)
@@ -54,7 +54,27 @@
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map "\C-cr" 'org-remember)
 
+
+; save temps somewhere else and don't affect the git repository
+(defvar user-temporary-file-directory
+(concat (file-name-directory (or load-file-name buffer-file-name)) 
+	".emacs.d/" "tmp" "/"))
+(make-directory user-temporary-file-directory t)
+(setq backup-by-copying t)
+(setq backup-directory-alist
+      `(("." . ,user-temporary-file-directory)
+        (,tramp-file-name-regexp nil)))
+(setq auto-save-list-file-prefix
+      (concat user-temporary-file-directory ".auto-saves-"))
+(setq auto-save-file-name-transforms
+      `((".*" ,user-temporary-file-directory t)))
+
+
+(desktop-save-mode 1)
+
+
 ;(setq server-host "1420n")
 ;set server-use-tcp to t
 ;(setq server-use-tcp t)
 (server-start)
+
