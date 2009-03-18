@@ -1,0 +1,16 @@
+;; Object gpicker-1.0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gpicker-1.0/"
+  :tables (list 
+   (semanticdb-table "gpicker.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("*gpicker-path*" variable (:default-value "gpicker") nil [1658 1691]) ("*gpicker-project-dir*" variable nil nil [1692 1726]) ("*gpicker-project-type*" variable nil nil [1727 1762]) ("*gpicker-errors-log*" variable (:default-value (expand-file-name "~/.gpicker-errors.log")) nil [1763 1835]) ("gpicker-pick" function (:arguments ("dir")) nil [1837 3224]) ("gpicker-guess-project-type" function (:arguments ("dir")) nil [3226 3352]) ("gpicker-set-project-type" function (:user-visible-flag t :arguments ("type")) nil [3354 3625]) ("gpicker-visit-project" function (:user-visible-flag t :arguments ("dir")) nil [3627 3879]) ("gpicker-do-find" function (:arguments ("find-function")) nil [3881 4178]) ("gpicker-find-file" function nil nil [4180 4256]) ("gpicker-find-file-other-window" function nil nil [4258 4360]) ("gpicker-find-file-other-frame" function nil nil [4362 4462]) ("gpicker" package nil nil [4464 4482]))
+    :file "gpicker.el"
+    :pointmax 4483
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )
