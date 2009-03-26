@@ -156,23 +156,6 @@
 	 "ecb"))
 (require 'ecb)
 
-;; This loads icicle mode. A helper to learn emacs using fuzzy commands search
-;; since it's heavy to load. You should enable  it with: M-x icy-mode
-(add-to-list 'load-path 
- (concat (file-name-directory (or load-file-name buffer-file-name))
-	 "icicles"))
-(require 'icicles)
-;; menus helper. useless in text mode.
-;(require 'lacarte)
-
-
-;; fuzzy find
-;(add-to-list 'load-path 
-;	     (concat (file-name-directory (or load-file-name buffer-file-name))
-;		     "fuzzy-find-in-project"))
-;(require 'fuzzy-find-in-project)
-;(fuzzy-find-project-root "~/workplace")
-
 ;; OPTIONALS:
 
 ; decreapted
@@ -185,18 +168,17 @@
       load-path))
 (require 'color-theme)
 
+(load-file 
+ (concat 
+  (file-name-directory (or load-file-name buffer-file-name)) 
+  "org-mode.el"))
 
-(setq load-path 
-      (cons (concat (file-name-directory (or load-file-name buffer-file-name))
-	      "org-mode/lisp")
-      load-path))
-(setq load-path 
-      (cons (concat (file-name-directory (or load-file-name buffer-file-name))
-	      "org-mode/contrib/lisp")
-	      load-path)) 
-(require 'org-install)
 
-(load-file "~/.emacs.d/emacsonrails/transpose.el")
+(load-file 
+ (concat 
+  (file-name-directory (or load-file-name buffer-file-name)) 
+  "transpose.el"))
+
 
 (load-file (concat (file-name-directory (or load-file-name buffer-file-name))
 	  "gpicker-1.0/gpicker.el") )
