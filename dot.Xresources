@@ -1,0 +1,5 @@
+
+Emacs.FontBackend: xft
+XTerm*faceName: Inconsolata
+XTerm*faceSize: 11
+

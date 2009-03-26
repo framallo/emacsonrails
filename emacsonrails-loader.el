@@ -75,8 +75,7 @@
 	      "nxhtml/autostart.el"))
 
 ;; added linum
-(add-hook 'eruby-nxhtml   'linum-mode)
-(add-hook 'ruby-mode-hook 'linum-mode)
+(global-linum-mode t)
 
 ;; completition section
 ;; predictive install location

@@ -23,4 +23,5 @@ sudo make install
 cd ..
 
 cat dot.emacs >> ~/.emacs
+cat dot.Xresources >> ~/.Xresources
 
