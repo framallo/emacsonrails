@@ -1,5 +1,3 @@
-;TODO - Makefile to generate the path here the user wants (INSTALL)
-
 (setq load-path
       (cons (concat (file-name-directory (or load-file-name buffer-file-name)))
 	    load-path))
@@ -78,6 +76,7 @@
 (global-linum-mode t)
 
 ;; completition section
+
 ;; predictive install location
 (add-to-list 'load-path 
 (concat (file-name-directory (or load-file-name buffer-file-name))
@@ -158,8 +157,6 @@
 
 ;; OPTIONALS:
 
-; decreapted
-;(require 'find-recursive) 
 (require 'pastie)
 
 (setq load-path  
@@ -173,13 +170,12 @@
   (file-name-directory (or load-file-name buffer-file-name)) 
   "org-mode.el"))
 
-
 (load-file 
  (concat 
   (file-name-directory (or load-file-name buffer-file-name)) 
   "transpose.el"))
 
-
+;; gpicker
 (load-file (concat (file-name-directory (or load-file-name buffer-file-name))
 	  "gpicker-1.0/gpicker.el") )
 (global-set-key [8388710] 'gpicker-find-file)

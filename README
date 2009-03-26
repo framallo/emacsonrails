@@ -1,18 +1,35 @@
+This script integrates several plugins for emacs and is used daily for rails development
+
+Integrates:
+* cedet  - http://cedet.sourceforge.net/
+* ecb  - http://ecb.sourceforge.net/
+* nxhtml  - http://ourcomments.org/Emacs/nXhtml/doc/nxhtml.html
+* org-mode  - http://orgmode.org/
+* predictive  - http://www.dr-qubit.org/emacs.php#predictive
+* rinari  - http://rinari.rubyforge.org/
+* ruby indentation and color 
+* color-theme  - http://www.emacswiki.org/emacs/ColorTheme
+* yasnippet  - http://code.google.com/p/yasnippet/
+* pastie
+* transpose buffers
+
+
 how to install:
 ===============
+Tested on ubuntu 8.04, 8.10
+
 Requirements:
 * emacs-snapshot
 
-To install:
-
+How to install:
 copy emacsonrails folder to ~/.emacs.d/emacsonrails
 
 Run:
 cd ~/.emacs.d/emacsonrails
 install.sh
 
-emacs-snapshot repo
-===================
+add emacs-snapshot repo
+======================= 
 add to /etc/apt/sources.list
 
 # emacs
