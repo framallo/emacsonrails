@@ -1,13 +1,14 @@
 This script integrates several plugins for emacs and is used daily for rails development
 
 Integrates:
+* rinari  - http://rinari.rubyforge.org/
+* nxhtml  - http://ourcomments.org/Emacs/nXhtml/doc/nxhtml.html
+* ruby-mode, indentation and color 
+* gpicker - fuzzy finder for emacs
 * cedet  - http://cedet.sourceforge.net/
 * ecb  - http://ecb.sourceforge.net/
-* nxhtml  - http://ourcomments.org/Emacs/nXhtml/doc/nxhtml.html
 * org-mode  - http://orgmode.org/
 * predictive  - http://www.dr-qubit.org/emacs.php#predictive
-* rinari  - http://rinari.rubyforge.org/
-* ruby indentation and color 
 * color-theme  - http://www.emacswiki.org/emacs/ColorTheme
 * yasnippet  - http://code.google.com/p/yasnippet/
 * pastie
